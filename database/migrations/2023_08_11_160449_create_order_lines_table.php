@@ -13,14 +13,15 @@ class CreateLinesTable extends Migration
      */
     public function up()
     {
-        Schema::create('lines', function (Blueprint $table) {
+        Schema::create('order_lines', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('order_id');
             $table->integer('qty');
             $table->unsignedBigInteger('product_id');            
             $table->dateTime('created_at');
             $table->dateTime('updated_at');
-            
+            //$table->timestamps();
+
             $table->foreign('order_id')->references('id')->on('orders')->onDelete('cascade');
             $table->foreign('product_id')->references('id')->on('products')->onDelete('cascade');
         });
