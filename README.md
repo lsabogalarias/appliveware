@@ -9,7 +9,7 @@
 
 ## Intructivo Para instalación del proyecto
 
-- Abrir el http://localhost/phpmyadmin/ ya sea desde wamppserver/Xampprear o Laragon y crear una base de datos con el nombre appliveware
+- Abrir el http://localhost/phpmyadmin/ ya sea desde wamppserver/Xampp o Laragon y crear una base de datos con el nombre appliveware
 - Clonar el repositorio en el path htdocs o www dependiendo de si esta usando xampp o wamp server
 - Abrir una consola y ubicarse en el path del proyecto
 - Escribir la siguiente linea de comando php artisan migrate
