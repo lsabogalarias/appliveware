@@ -15,8 +15,8 @@ class CreateOrdersTable extends Migration
     {
         Schema::create('orders', function (Blueprint $table) {
             $table->id();
-            $table->string('order_ref' );
-            $table->string('customer_name');  
+            $table->string('order_ref');
+            $table->string('customer_name', 15);
             $table->dateTime('created_at');
             $table->dateTime('updated_at'); 
         });

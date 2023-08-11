@@ -20,8 +20,8 @@ class OrderSeeder extends Seeder
             DB::table("Orders")->insert(
                 array(
                     'id'            => $faker->unique->randomNumber,
-                    'order_ref'     => $faker->sentence(8),
-                    'customer_name' => $faker->paragraph(10),
+                    'order_ref'     => $faker->sentence,
+                    'customer_name' => $faker->unique()->word,
                     'created_at'    => date('Y-m-d H:m:s'),
                     'updated_at'    => date('Y-m-d H:m:s')
                 )
