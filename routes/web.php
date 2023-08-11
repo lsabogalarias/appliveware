@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\OrderController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/orders', [OrderController::class, 'index']);
+Route::get('/calculate-total-cost', [OrderController::class, 'calculateTotalCost']);
+Route::get('/dispatch-calculate-job', [OrderController::class, 'dispatchCalculateTotalCostJob']);
