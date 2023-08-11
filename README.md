@@ -15,5 +15,6 @@
 - Escribir la siguiente linea de comando php artisan db:seed --class=OrderSeeder
 - Escribir la siguiente linea de comando php artisan db:seed --class=ProductSeeder
 - Escribir la siguiente linea de comando php artisan db:seed --class=OrderLineSeeder
-- Escribir la siguiente linea de comando php artisan serve
+- Escribir la siguiente linea de comando php artisan queue:work para ejecutar el JOB
+- En otra ventana de la consola escribir la siguiente linea de comando php artisan serve
 - Con la ip que php artisan serve le indique abra una ventana del navegador y escriba la ip seguido de /user. por ejemplo http://127.0.0.1:8000/orders
